@@ -141,7 +141,7 @@ accumulation takes place between pairs of dates: 1. 00Z January 1 -- 21Z
 March 31 2. 00Z April 1 -- 21Z June 30 3. 00Z July 1 -- 21Z September 30
 4. 00Z October 1 -- 21Z December 31
 
-File Contents for the NWM Retrospective Output Data Fields:
+## File Contents for the NWM Retrospective Output Data Fields:
 
 **Channel Output in the CHRTOUT files**
 | Variable Name | Description | Version |
