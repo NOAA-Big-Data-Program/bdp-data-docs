@@ -1,2 +1,2 @@
 # BDP-Docs
-This repository contains documents related to the NOAA Big Data Program. 
+This repository contians a collection of documentation for publicly available datasets hosted by the NOAA Big Data Program. 
