@@ -31,11 +31,14 @@ Learn more about the National Water Model: [http://water.noaa.gov/](http://water
 
 ## Accessing NWM Reanalysis on AWS
 
+The NWM Retrospective version 2.1 is stored in Zarr and NetCDF Formats in these S3 buckets:
 
-The NWM Reanalysis version 1.2 is stored in the **nwm-archive** Amazon S3
-bucket while the version 2.0 is stored int he **noaa-nwm-retro-v2.0-pds** bucket both in the **us-east-1** AWS region.
+noaa-nwm-retrospective-2-1-zarr-pds
+noaa-nwm-retrospective-2-1-pds
 
-This bucket contains the reanalysis archive organized by year starting
+Additional versions can also be found at https://registry.opendata.aws/nwm-archive/
+
+The noaa-nwm-retro-v2.0-pds bucket contains the reanalysis archive organized by year starting
 in 1993. The files are an internally compressed NetCDF format. They do
 not need to be decompressed. Each file contains detailed metadata
 describing the data stored within it.
