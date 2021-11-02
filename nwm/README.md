@@ -143,8 +143,10 @@ March 31 2. 00Z April 1 -- 21Z June 30 3. 00Z July 1 -- 21Z September 30
 
 File Contents for the NWM Retrospective Output Data Fields:
 
-| Field | Type | Description & Style |
+**Channel Output in the CHRTOUT files**
+| Variable Name | Description | Version |
 | --- | --- | --- |
+| elevation | Feature Elevation | 2.1, 2.0 |
 
 ## Document Updates
 
