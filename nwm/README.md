@@ -56,7 +56,7 @@ different product types, not all products are published at hourly
 intervals. The products types are listed in the table below.
 
 | Product | Description | Cycle | Example File Name |
-| --- | --- | --- |
+| --- | --- | --- | ---|
 | CHRTOUT | Streamflow values at points associated with flow lines | Every Hour | 201701010000.CHRTOUT\_DOMAIN1.comp |
 | LAKEOUT | Output values at points associated with reservoirs (lakes) | Every Hour | 201701010000.LAKEOUT\_DOMAIN1.comp |
 | LDASOUT | Land surface model output | Every 3rd Hour | 201701010000.LDASOUT\_DOMAIN1.comp |
