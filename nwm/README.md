@@ -98,28 +98,28 @@ listed below along with some of the parameters and properties of the
 respective files. More details are available in the metadata contained
 within each file:
 
-**Channel Output in the CHRTOUT files**
+**Channel Output in the CHRTOUT files (Point Type)**
 | Variable Name | Description | Version |
 | --- | --- | --- |
-| elevation | Feature Elevation | 2.1, 2.0 |
-| streamflow | River Flow | 2.1, 2.0, 1.2 |
-| q_lateral | Total runoff into channel reach | 2.1, 2.0, 1.2 |
-| velocity | River velocity | 2.1, 2.0, 1.2 |
-| qSfcLatRunoff | Runoff from terrain routing into channel | 2.1, 2.0, 1.2 |
-| qBucket | Flux from conceptual groundwater basin into channel | 2.1, 2.0, 1.2 |
-| qBtmVertRunoff | Runoff from bottom of soil column to conceptuals groundwater basin | 2.1, 2.0, 1.2 |
+| elevation | Feature Elevation (m) | 2.1, 2.0 |
+| streamflow | River Flow (m<sup>3</sup> s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
+| q_lateral | Total runoff into channel reach (m<sup>3</sup> s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
+| velocity | River velocity (m s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
+| qSfcLatRunoff | Runoff from terrain routing into channel (m<sup>3</sup> s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
+| qBucket | Flux from conceptual groundwater basin into channel (m<sup>3</sup> s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
+| qBtmVertRunoff | Runoff from bottom of soil column to conceptuals groundwater basin (m<sup>3</sup>) | 2.1, 2.0, 1.2 |
 
-**Lake Output in the LAKEOUT files**
+**Lake Output in the LAKEOUT files (Point Type)**
 | Variable Name | Description | Version |
 | --- | --- | --- |
 | reservoir_type | 1= Level_pool, 2=USGS-persistence, 3=USACE-persistence, 4=RFC-forecasts | 2.1 |
 | reservoir_assimilated_value | reservoir assimilated value | 2.1 |
 | latitude | Lake latitude | 2.1, 2.0, 1.2 |
 | longitude | Lake longitude | 2.1, 2.0, 1.2 |
-| elevation | Water surface elevation | 1.2 |
+| elevation | Water surface elevation (m) | 1.2 |
 | water_sfc_elev | Water surface elevation | 2.1, 2.0, 1.2 |
-| inflow | Lake inflow | 2.1, 2.0, 1.2 |
-| outflow | Lake outflow | 2.1, 2.0, 1.2 |
+| inflow | Lake inflow (m<sup>3</sup> s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
+| outflow | Lake outflow (m<sup>3</sup> s<sup>-1</sup>) | 2.1, 2.0, 1.2 |
 
 **Cenceptual Nonlinear Groundwater Reservoir Output in the GWOUT files**
 | Variable Name | Description | Version |
@@ -128,7 +128,7 @@ within each file:
 | outflow | Conceptual Groundwater basin outflow | 2.1, 2.0 |
 | depth | Conceptual Groundwater basin storage depth | 2.1, 2.0 |
 
-**Land Surface Output Variables in the LDASOUT files**
+**Land Surface Output Variables in the LDASOUT files (Geospatial)**
 | Variable Name | Description | Version |
 | --- | --- | --- |
 | COSZ | Cosine of zenith angle | 2.1, 2.0 |
@@ -152,31 +152,23 @@ within each file:
 | QRAIN | Rate of liquid precipitation reaching the ground | 2.1 |
 | QSNOW | Rate of frozen precipitation reaching the ground | 2.1 |
 
+**Surface Terrain Routing Output Variables in the RTOUT files (Geospatial)**
+| Variable Name | Description | Version |
+| --- | --- | --- |
+| Zwattablrt | Depth to saturation, rounded to the highest saturated layer (m)| 2.1, 2.0, 1.2 |
+| sfcheadsubrt | Ponded water depth (mm) | 2.1, 2.0, 1.2 |
 
-
-
-**RTOUT: Geospatial, 250m Gridded NetCDF**
-
--   sfcheadsubrt: Ponded water depth (mm)
--   zwattablrt: Water table depth (m)
-
-**LAKEOUT: Point Type (including Lake ID)**
-
--   feature\_id: Lake Common ID
--   elevation: Water surface elevation (m)
--   inflow: Reservoir inflow (m<sup>3</sup> s<sup>-1</sup>)
--   outflow: Reservoir outflow (m<sup>3</sup> s<sup>-1</sup>)
-
-**CHRTOUT: Point Type (including Reach ID)**
-
--   feature\_id: Reach ID
--   streamflow: River Flow (m<sup>3</sup> s<sup>-1</sup>)
--   q\_lateral: Runoff into channel reach (m<sup>3</sup> s<sup>-1</sup>)
--   velocity: River Velocity (m s<sup>-1</sup>)
--   qSfcLatRunoff: Runoff from terrain routing (m<sup>3</sup> s<sup>-1</sup>)
--   qBucket: Flux from ground water bucket (m<sup>3</sup> s<sup>-1</sup>)
--   qBtmVertRunoff: Runoff from bottom of soil to ground water bucket
-    (m<sup>3</sup>)
+**NWM Forcing Inputs in the LDASIN files**
+| Variable Name | Description | Version |
+| --- | --- | --- |
+| RAINRATE | Total Precipitation | 2.1 |
+| T2D | Temperature | 2.1 |
+| Q2D | Specific humidity | 2.1 |
+| U2D | U-component of wind | 2.1 |
+| V2D | V-component of wind | 2.1 |
+| PSFC | Pressure | 2.1 |
+| SWDOWN | Downward short-wave radiation flux | 2.1 |
+| LWDOWN | Downward long-wave rad. flux | 2.1 |
 
 **LDASOUT: Geospatial, 1Km Gridded NetCDF**
 
