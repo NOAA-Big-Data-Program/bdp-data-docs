@@ -60,7 +60,7 @@ intervals. The products types are listed in the table below.
 | CHRTOUT | Streamflow values at points associated with flow lines | Every Hour | 201701010000.CHRTOUT\_DOMAIN1.comp |
 | LAKEOUT | Output values at points associated with reservoirs (lakes) | Every Hour | 201701010000.LAKEOUT\_DOMAIN1.comp |
 | LDASOUT | Land surface model output | Every 3rd Hour | 201701010000.LDASOUT\_DOMAIN1.comp |
-| RTOUT| Ponded water and depth to soil saturation | Every 3rd Hour | 201701010000.RTOUT\_DOMAIN1.comp |
+| RTOUT | Ponded water and depth to soil saturation | Every 3rd Hour | 201701010000.RTOUT\_DOMAIN1.comp |
 
 Each product (data file) uses the following naming convention:
 `yyyy/yyyymmddhhhh.product_DOMAIN1.comp` where:
