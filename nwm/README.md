@@ -132,25 +132,30 @@ within each file:
 | Variable Name | Description | Version |
 | --- | --- | --- |
 | COSZ | Cosine of zenith angle | 2.1, 2.0 |
-| FSA | Total absorbed shortwave radiation | 2.1, 2.0, 1.2 |
-| FIRA | Total net longwave radiation to atmosphere | 2.1, 2.0, 1.2 |
-| HFX | Total sensible heat to atmosphere | 2.1, 2.0, 1.2 |
-| LH | Total latet heat to the atmosphere | 2.1, 2.0, 1.2 |
+| FSA | Total absorbed shortwave radiation (W m<sup>-2</sup>) | 2.1, 2.0, 1.2 |
+| FIRA | Total net longwave radiation to atmosphere (W m<sup>-2</sup>) | 2.1, 2.0, 1.2 |
+| HFX | Total sensible heat to atmosphere (W m<sup>-2</sup>) | 2.1, 2.0, 1.2 |
+| LH | Total latet heat to the atmosphere (W m<sup>-2</sup>) | 2.1, 2.0, 1.2 |
 | ALBEDO | Surface albedo | 2.1, 2.0 |
-| UGDRNOFF | Accumulated underground runoff | 2.1, 2.0, 1.2 |
-| TRAD | Surface radiative temperature | 2.1, 2.0, 1.2 |
-| SOIL_W | Liquid volumetric soil moisture | 2.1, 2.0, 1.2 |
-| SOIL_M | Volumetric soil moisture (liquid and frozen) | 2.1, 2.0, 1.2 |
-| SNOWH | Snow depth | 2.1, 2.0, 1.2 |
-| SNEQV | Snow water equivalent | 2.1, 2.0, 1.2 |
-| FSNO | Snow-cover fraction on the ground | 2.1, 2.0, 1.2 |
-| ACCET | Accumulated total ET | 2.1, 2.0, 1.2 |
+| UGDRNOFF | Accumulated underground runoff (mm) | 2.1, 2.0, 1.2 |
+| TRAD | Surface radiative temperature (K) | 2.1, 2.0, 1.2 |
+| SOIL_W | Liquid volumetric soil moisture (m<sup>3</sup> m<sup>-3</sup>) | 2.1, 2.0, 1.2 |
+| SOIL_M | Volumetric soil moisture (liquid and frozen) (m<sup>3</sup> m<sup>-3</sup>) | 2.1, 2.0, 1.2 |
+| SNOWH | Snow depth (m) | 2.1, 2.0, 1.2 |
+| SNEQV | Snow water equivalent (kg m<sup>-2</sup>) | 2.1, 2.0, 1.2 |
+| FSNO | Snow-cover fraction on the ground (fraction) | 2.1, 2.0, 1.2 |
+| ACCET | Accumulated total ET (mm) | 2.1, 2.0, 1.2 |
 | ALBSND | Snowpack direct-beam albedo | 2.1, 2.0 |
 | ALBSNI | Snowpack diffuse-beam albedo | 2.1, 2.0 |
 | EDIR | Direct evaporation flux from the surface | 2.1 |
 | ACSNOM | Accumulated melting water out of snowpack bottom layer | 2.1 |
 | QRAIN | Rate of liquid precipitation reaching the ground | 2.1 |
 | QSNOW | Rate of frozen precipitation reaching the ground | 2.1 |
+
+Note: For the two accumulation variables, UGDRNOFF and ACCET, the
+accumulation takes place between pairs of dates: 1. 00Z January 1 -- 21Z
+March 31 2. 00Z April 1 -- 21Z June 30 3. 00Z July 1 -- 21Z September 30
+4. 00Z October 1 -- 21Z December 31
 
 **Surface Terrain Routing Output Variables in the RTOUT files (Geospatial)**
 | Variable Name | Description | Version |
@@ -169,28 +174,6 @@ within each file:
 | PSFC | Pressure | 2.1 |
 | SWDOWN | Downward short-wave radiation flux | 2.1 |
 | LWDOWN | Downward long-wave rad. flux | 2.1 |
-
-**LDASOUT: Geospatial, 1Km Gridded NetCDF**
-
--   ACCET: Accumulated evapotranspiration (mm)
--   FIRA: Total net long wave (LW) radiation to atmosphere (W m<sup>-2</sup>)
--   FSA: Total absorbed Short Wave (SW) radiation (W m<sup>-2</sup>)
--   FSNO: Snow cover fraction on the ground (fraction)
--   HFX: Total sensible heat to the atmosphere (W m<sup>-2</sup>)
--   LH: Latent heat to the atmosphere (W m<sup>-2</sup>)
--   SNEQV: Snow water equivalent (kg m<sup>-2</sup>)
--   SNOWH: Snow depth (m)
--   SOIL\_M: Volumetric soil moisture (m<sup>3</sup> m<sup>-3</sup>)
--   SOIL\_W: Liquid volumetric soil moisture (m<sup>3</sup> m<sup>-3</sup>)
--   TRAD: Surface radiative temperature (K)
--   UGDRNOFF: Accumulated underground runoff (mm)
-
-Note: For the two accumulation variables, UGDRNOFF and ACCET, the
-accumulation takes place between pairs of dates: 1. 00Z January 1 -- 21Z
-March 31 2. 00Z April 1 -- 21Z June 30 3. 00Z July 1 -- 21Z September 30
-4. 00Z October 1 -- 21Z December 31
-
-
 
 ## Document Updates
 
