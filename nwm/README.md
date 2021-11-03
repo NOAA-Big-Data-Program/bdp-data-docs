@@ -98,6 +98,44 @@ listed below along with some of the parameters and properties of the
 respective files. More details are available in the metadata contained
 within each file:
 
+## File Contents for the NWM Retrospective Output Data Fields:
+
+**Channel Output in the CHRTOUT files**
+| Variable Name | Description | Version |
+| --- | --- | --- |
+| elevation | Feature Elevation | 2.1, 2.0 |
+| streamflow | River Flow | 2.1, 2.0, 1.2 |
+| q_lateral | Total runoff into channel reach | 2.1, 2.0, 1.2 |
+| velocity | River velocity | 2.1, 2.0, 1.2 |
+| qSfcLatRunoff | Runoff from terrain routing into channel | 2.1, 2.0, 1.2 |
+| qBucket | Flux from conceptual groundwater basin into channel | 2.1, 2.0, 1.2 |
+| qBtmVertRunoff | Runoff from bottom of soil column to conceptuals groundwater basin | 2.1, 2.0, 1.2 |
+
+**Lake Output in the LAKEOUT files**
+| Variable Name | Description | Version |
+| --- | --- | --- |
+| reservoir_type | 1= Level_pool, 2=USGS-persistence, 3=USACE-persistence, 4=RFC-forecasts | 2.1 |
+| reservoir_assimilated_value | reservoir assimilated value | 2.1 |
+| latitude | Lake latitude | 2.1, 2.0, 1.2 |
+| longitude | Lake longitude | 2.1, 2.0, 1.2 |
+| elevation | Water surface elevation | 1.2 |
+| water_sfc_elev | Water surface elevation | 2.1, 2.0, 1.2 |
+| inflow | Lake inflow | 2.1, 2.0, 1.2 |
+| outflow | Lake outflow | 2.1, 2.0, 1.2 |
+
+**Cenceptual Nonlinear Groundwater Reservoir Output in the GWOUT files**
+| Variable Name | Description | Version |
+| --- | --- | --- |
+| reservoir_type | 1= Level_pool, 2=USGS-persistence, 3=USACE-persistence, 4=RFC-forecasts | 2.1 |
+| reservoir_assimilated_value | reservoir assimilated value | 2.1 |
+| latitude | Lake latitude | 2.1, 2.0, 1.2 |
+| longitude | Lake longitude | 2.1, 2.0, 1.2 |
+| elevation | Water surface elevation | 1.2 |
+| water_sfc_elev | Water surface elevation | 2.1, 2.0, 1.2 |
+| inflow | Lake inflow | 2.1, 2.0, 1.2 |
+| outflow | Lake outflow | 2.1, 2.0, 1.2 |
+
+
 **RTOUT: Geospatial, 250m Gridded NetCDF**
 
 -   sfcheadsubrt: Ponded water depth (mm)
@@ -141,12 +179,7 @@ accumulation takes place between pairs of dates: 1. 00Z January 1 -- 21Z
 March 31 2. 00Z April 1 -- 21Z June 30 3. 00Z July 1 -- 21Z September 30
 4. 00Z October 1 -- 21Z December 31
 
-## File Contents for the NWM Retrospective Output Data Fields:
 
-**Channel Output in the CHRTOUT files**
-| Variable Name | Description | Version |
-| --- | --- | --- |
-| elevation | Feature Elevation | 2.1, 2.0 |
 
 ## Document Updates
 
