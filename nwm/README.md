@@ -91,14 +91,12 @@ or via HTTPS like this:
 
 `https://nwm-archive.s3.amazonaws.com/2003/200305011200.CHRTOUT_DOMAIN1.com`
 
-## Configuration of the Data
+## File Contents for the NWM Retrospective Output Data Fields:
 
 The dataset contains four products for each day. The four products are
 listed below along with some of the parameters and properties of the
 respective files. More details are available in the metadata contained
 within each file:
-
-## File Contents for the NWM Retrospective Output Data Fields:
 
 **Channel Output in the CHRTOUT files**
 | Variable Name | Description | Version |
@@ -126,14 +124,35 @@ within each file:
 **Cenceptual Nonlinear Groundwater Reservoir Output in the GWOUT files**
 | Variable Name | Description | Version |
 | --- | --- | --- |
-| reservoir_type | 1= Level_pool, 2=USGS-persistence, 3=USACE-persistence, 4=RFC-forecasts | 2.1 |
-| reservoir_assimilated_value | reservoir assimilated value | 2.1 |
-| latitude | Lake latitude | 2.1, 2.0, 1.2 |
-| longitude | Lake longitude | 2.1, 2.0, 1.2 |
-| elevation | Water surface elevation | 1.2 |
-| water_sfc_elev | Water surface elevation | 2.1, 2.0, 1.2 |
-| inflow | Lake inflow | 2.1, 2.0, 1.2 |
-| outflow | Lake outflow | 2.1, 2.0, 1.2 |
+| inflow | Conceptual Groundwater basin inflow | 2.1, 2.0 |
+| outflow | Conceptual Groundwater basin outflow | 2.1, 2.0 |
+| depth | Conceptual Groundwater basin storage depth | 2.1, 2.0 |
+
+**Land Surface Output Variables in the LDASOUT files**
+| Variable Name | Description | Version |
+| --- | --- | --- |
+| COSZ | Cosine of zenith angle | 2.1, 2.0 |
+| FSA | Total absorbed shortwave radiation | 2.1, 2.0, 1.2 |
+| FIRA | Total net longwave radiation to atmosphere | 2.1, 2.0, 1.2 |
+| HFX | Total sensible heat to atmosphere | 2.1, 2.0, 1.2 |
+| LH | Total latet heat to the atmosphere | 2.1, 2.0, 1.2 |
+| ALBEDO | Surface albedo | 2.1, 2.0 |
+| UGDRNOFF | Accumulated underground runoff | 2.1, 2.0, 1.2 |
+| TRAD | Surface radiative temperature | 2.1, 2.0, 1.2 |
+| SOIL_W | Liquid volumetric soil moisture | 2.1, 2.0, 1.2 |
+| SOIL_M | Volumetric soil moisture (liquid and frozen) | 2.1, 2.0, 1.2 |
+| SNOWH | Snow depth | 2.1, 2.0, 1.2 |
+| SNEQV | Snow water equivalent | 2.1, 2.0, 1.2 |
+| FSNO | Snow-cover fraction on the ground | 2.1, 2.0, 1.2 |
+| ACCET | Accumulated total ET | 2.1, 2.0, 1.2 |
+| ALBSND | Snowpack direct-beam albedo | 2.1, 2.0 |
+| ALBSNI | Snowpack diffuse-beam albedo | 2.1, 2.0 |
+| EDIR | Direct evaporation flux from the surface | 2.1 |
+| ACSNOM | Accumulated melting water out of snowpack bottom layer | 2.1 |
+| QRAIN | Rate of liquid precipitation reaching the ground | 2.1 |
+| QSNOW | Rate of frozen precipitation reaching the ground | 2.1 |
+
+
 
 
 **RTOUT: Geospatial, 250m Gridded NetCDF**
