@@ -10,7 +10,9 @@ existed in order to get a better understanding of the state of the
 weather from that period. This same type of historical run can be
 conducted for other types of models as well, including water models.
 
-The NOAA National Water Model Reanalysis dataset contains input and output from multi-decade retrospective simulations. These simulations used observed rainfall as input and ingested other required meteorological input fields from a weather reanalysis dataset. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time forecast model. One application of this dataset is to provide historical context to current near real-time streamflow, soil moisture and snowpack conditions. The reanalysis data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. This  dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes. This dataset contains output from two retrospective simulations. Currently there are three versions of the dataset. Version 1.2 output files are available in netcdf (all variables). Version 2.0 output files are available in both netcdf (all variables) and zarr (channel routing variables) formats. While, the third version 2.1 input and output files are available in both netcdf and zarr for the following data types:
+The NOAA National Water Model Reanalysis dataset contains input and output from multi-decade retrospective simulations. These simulations used observed rainfall as input and ingested other required meteorological input fields from a weather reanalysis dataset. The output frequency and fields available in this historical NWM dataset differ from those contained in the real-time forecast model. One application of this dataset is to provide historical context to current near real-time streamflow, soil moisture and snowpack conditions. The reanalysis data can be used to infer flow frequencies and perform temporal analyses with hourly streamflow output and 3-hourly land surface output. This  dataset can also be used in the development of end user applications which require a long baseline of data for system training or verification purposes. This dataset contains output from two retrospective simulations. Currently there are three versions of the dataset. Version 2.1 has all model output and forcing input fields available in the NetCDF format.  All model output fields along with the precipitation forcing field are available in the Zarr format.
+
+Version 2.1 input and output files are available in both netcdf and zarr for the following data types:
 
 channel routing (chrtout) <br/>
 subsurface (gwout) <br/>
@@ -19,7 +21,10 @@ land surface (ldasout) <br/>
 precipitation (precip) <br/> 
 terrain routing (rtout)
 
-For the current three versions of the dataset we have: A 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model, a 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model and a 41-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model.
+V2.0 has all model output fields available in NetCDF format.  Model channel output including streamflow and related fields are available in Zarr format.
+V1.2 has  all model output fields available in NetCDF format. 
+
+For the current three versions of the dataset we have: A 41-year (February 1979 through December 2020) retrospective simulation using version 2.1 of the National Water Model, a 26-year (January 1993 through December 2018) retrospective simulation using version 2.0 of the National Water Model and a 25-year (January 1993 through December 2017) retrospective simulation using version 1.2 of the National Water Model.
 
 Learn more about the National Water Model: [http://water.noaa.gov/](http://water.noaa.gov/)
 
@@ -38,18 +43,22 @@ in 1993. The files are an internally compressed NetCDF format. They do
 not need to be decompressed. Each file contains detailed metadata
 describing the data stored within it.
 
-You can use the AWS Command Line Interface to list a particular year
-(2003 in this example) in the bucket like this:
+For V2.1, 2.0 and 1.2:
+You can use the AWS Command Line Interface to list a particular year (2003 in this example) in the bucket like this:
 
-`aws s3 ls s3://noaa-nwm-retro-v2.0-pds/full_physics/2003/ --no-sign-request`
+aws s3 ls noaa-nwm-retrospective-2-1-pds/model_output/2003/ --no-sign-request
 
-`aws s3 ls nwm-archive/2003/ --no-sign-request`
+aws s3 ls noaa-nwm-retro-v2.0-pds/full_physics/ --no-sign-request
 
+aws s3 ls nwm-archive/2003/ --no-sign-request
 
 or via a url constructed like this:
-`https://noaa-nwm-retro-v2.0-pds.s3.amazonaws.com/?prefix=full_physics/2003`
 
-`https://nwm-archive.s3.amazonaws.com/?prefix=2003`
+https://noaa-nwm-retrospective-2-1-pds.s3.amazonaws.com/?prefix=model_output/2003
+
+https://noaa-nwm-retro-v2.0-pds.s3.amazonaws.com/?prefix=full_physics/2003
+
+https://nwm-archive.s3.amazonaws.com/?prefix=2003
 
 Each year contains files for each hour of the year iterated over
 different product types, not all products are published at hourly
