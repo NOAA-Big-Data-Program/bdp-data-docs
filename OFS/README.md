@@ -224,7 +224,7 @@ The outputs from the two legacy LOOFS and LSOFS are not structured in the same w
 
 
 
-Where lOFS is lhofs, lmofs, loofs or lsofs and BB is 00, 06, 12 or 18.
+Where lOFS is LOOFS or LSOFS and BB is 00, 06, 12 or 18.
 
 
 
