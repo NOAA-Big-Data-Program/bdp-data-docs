@@ -48,20 +48,20 @@ You can use the AWS Command Line Interface to list a particular day in the bucke
  - `YYYY` = year, `MM` = month, `DD` = day
 <br/>
 
-| OFS Code | Operational Forecast System | Forecast Horizon |
-| --- | --- | --- |
-| CBOFS | Chesapeake Bay | 48 hrs |
-| CIOFS | 	Cook Inlet | 48 hrs |
-| CREOFS | 	Columbia River Estuary | 48 hrs |
-| DBOFS | 	Delaware Bay | 48 hrs |
-| GLOFS | 	Great Lakes | 60 hrs |
-| GoMOFS | Gulf of Maine | 72 hrs |
-| LEOFS | Lake Erie | 120 hrs |
-| LMHOFS | 	Lake Michigan and Huron | 120 hrs |
-| NGOFS2 | Northern Gulf of Mexico | 48 hrs |
-| SFBOFS | 	San Francisco Bay | 48 hrs |
-| TBOFS | Tampa Bay | 48 hrs |
-| WCOFS | 	West Coast | 72 hrs |
+| OFS Code | Operational Forecast System | Forecast Horizon | Resolution
+| --- | --- | --- | --- |
+| CBOFS | Chesapeake Bay | 48 hrs | 50m - 3km |
+| CIOFS | 	Cook Inlet | 48 hrs | 10m – 3.5km
+| CREOFS | 	Columbia River Estuary | 48 hrs | 100m - 4km |
+| DBOFS | 	Delaware Bay | 48 hrs | 100m - 3km |
+| GLOFS | 	Great Lakes | 60 hrs | 5 km |
+| GoMOFS | Gulf of Maine | 72 hrs | 700 m |
+| LEOFS | Lake Erie | 120 hrs | 400m - 4km |
+| LMHOFS | 	Lake Michigan and Huron | 120 hrs | 50m – 2.5km |
+| NGOFS2 | Northern Gulf of Mexico | 48 hrs | 45m - 300m |
+| SFBOFS | 	San Francisco Bay | 48 hrs | 100m - 4km |
+| TBOFS | Tampa Bay | 48 hrs | 100m - 1.2km |
+| WCOFS | 	West Coast | 72 hrs | 4km |
 
 <br/>
 
