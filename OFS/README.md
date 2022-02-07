@@ -46,94 +46,24 @@ You can use the AWS Command Line Interface to list a particular day in the bucke
  - Where `OFS` stands for Operational Forecast System, see table below
 
  - `YYYY` = year, `MM` = month, `DD` = day
+<br/>
 
-<br />
-<table>
-<thead>
-<tr>
-<th>OFS Code</th>
-<th>Operational Forecast System</th>
-<th>Forecast Horizon</th>
-<th>Resolution</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CBOFS</td>
-<td>Chesapeake Bay</td>
-<td>48 hrs</td>
-<td>50m - 3km</td>
-</tr>
-<tr>
-<td>CIOFS</td>
-<td>Cook Inlet</td>
-<td>48 hrs</td>
-<td>10m – 3.5km</td>
-</tr>
-<tr>
-<td>CREOFS</td>
-<td>Columbia River Estuary</td>
-<td>48 hrs</td>
-<td>100m - 4km</td>
-</tr>
-<tr>
-<td>DBOFS</td>
-<td>Delaware Bay</td>
-<td>48 hrs</td>
-<td>100m - 3km</td>
-</tr>
-<tr>
-<td>GLOFS</td>
-<td>Great Lakes</td>
-<td>60 hrs</td>
-<td>5 km</td>
-</tr>
-<tr>
-<td>GoMOFS</td>
-<td>Gulf of Maine</td>
-<td>72 hrs</td>
-<td>700 m</td>
-</tr>
-<tr>
-<td>LEOFS</td>
-<td>Lake Erie</td>
-<td>120 hrs</td>
-<td>400m - 4km</td>
-</tr>
-<tr>
-<td>LMHOFS</td>
-<td>Lake Michigan and Huron</td>
-<td>120 hrs</td>
-<td>50m – 2.5km</td>
-</tr>
-<tr>
-<td>NGOFS2</td>
-<td>Northern Gulf of Mexico</td>
-<td>48 hrs</td>
-<td>45m - 300m</td>
-</tr>
-<tr>
-<td>SFBOFS</td>
-<td>San Francisco Bay</td>
-<td>48 hrs</td>
-<td>100m - 4km</td>
-</tr>
-<tr>
-<td>TBOFS</td>
-<td>Tampa Bay</td>
-<td>48 hrs</td>
-<td>100m - 1.2km</td>
-</tr>
-<tr>
-<td>WCOFS</td>
-<td>West Coast</td>
-<td>72 hrs</td>
-<td>4km</td>
-</tr>
-</tbody>
-</table>
-<br />
+| OFS Code | Operational Forecast System | Forecast Horizon |
+| --- | --- | --- |
+| CBOFS | Chesapeake Bay | 48 hrs |
+| CIOFS | 	Cook Inlet | 48 hrs |
+| CREOFS | 	Columbia River Estuary | 48 hrs |
+| DBOFS | 	Delaware Bay | 48 hrs |
+| GLOFS | 	Great Lakes | 60 hrs |
+| GoMOFS | Gulf of Maine | 72 hrs |
+| LEOFS | Lake Erie | 120 hrs |
+| LMHOFS | 	Lake Michigan and Huron | 120 hrs |
+| NGOFS2 | Northern Gulf of Mexico | 48 hrs |
+| SFBOFS | 	San Francisco Bay | 48 hrs |
+| TBOFS | Tampa Bay | 48 hrs |
+| WCOFS | 	West Coast | 72 hrs |
 
+<br/>
 
 Construction of the path for particular OFS will access to the forecast data. To construct the path and filename substitute the following variables into the path templates below:
 
