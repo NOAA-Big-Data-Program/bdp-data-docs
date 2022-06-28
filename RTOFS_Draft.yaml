@@ -11,6 +11,7 @@ Since 2020, the RTOFS system implements a multivariate, multi-scale 3DVar data a
 (5) sea ice concentration from SSMI/S, AMSR2;
 The system is designed to incorporate new observing systems as the data becomes available.
 Once the observations go through a fully automated quality control and thinning process, the increments, or corrections, are obtained by executing the 3D variational algorithm. The increments are then added to the 24-hours forecast fields using a 6-hourly incremental analysis update. An earlier version of the system is described in Garraffo et al (2020).
+
 Garraffo, Z.D., J.A. Cummings, S. Paturi, Y. Hao, D. Iredell, T. Spindler, B. Balasubramanian, I. Rivin, H-C. Kim, A. Mehra, 2020. Real Time Ocean-Sea Ice Coupled Three Dimensional Variational Global Data Assimilative Ocean Forecast System. In Research Activities in Earth System Modeling, edited by E. Astakhova, WMO, World Climate Research Program Report No.6, July 2020.
 
 Cummings, J. A. and O. M. Smedstad. 2013. Variational Data Assimilation for the Global Ocean.
@@ -33,7 +34,7 @@ Documentation: https://noaa-rtofs-pds.s3.amazonaws.com/README.html
 Collabs:
   ASDI:
     Tags:
-      - disaster response
+      - oceans
 Tags:
   - aws-pds
   - global
